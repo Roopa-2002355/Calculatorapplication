@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator project</title>
+   <link rel="stylesheet" href="calculator.css">
+</head>
+<body>  
+    <div class="container">
+        <h2>Welcome to calculate Me!</h2>
+    
+        <div class="twobtn">
+            <input id="display" type="text" placeholder="Enter a number">
+            <button onclick="clearDisplay()" class="operator-btn" >AC</button>
+            
+        </div>
+        <div class="row">
+            <button onclick="openToDisplay('7')">7</button>
+            <button onclick="openToDisplay('8')">8</button>
+            <button onclick="openToDisplay('9')">9</button>
+            <button onclick="openToDisplay('+')" class="operator-btn">+</button>
+        </div>
+        <div class="row">
+            <button onclick="openToDisplay('4')">4</button>
+            <button onclick="openToDisplay('5')">5</button>
+            <button onclick="openToDisplay('6')">6</button>
+            <button onclick="openToDisplay('-')" class="operator-btn">-</button>
+
+        </div>
+        <div class="row">
+            <button onclick="openToDisplay('1')" >1</button>
+            <button onclick="openToDisplay('2')">2</button>
+            <button onclick="openToDisplay('3')">3</button>
+            <button onclick="openToDisplay('*')" class="operator-btn">*</button>
+
+        </div>
+        <div class="row">
+            <button onclick="openToDisplay('0')">0</button>
+            <button onclick="openToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="openToDisplay('')" class="operator-btn">%</button>
+        </div>
+    </div>
+<script src="calculator.js"></script>
+</body>
+</html>
